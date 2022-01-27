@@ -1,0 +1,33 @@
+```php
+$data = [
+  "method"=> "user.create.account",
+  "params"=> [
+    "name"=> "Emil",
+    "email"=> "emil@bitclude.com",
+    "password"=> "R5#%ePg@$",
+    "phone"=> "+48123456789",
+    "nip"=> "123-456-78-90"
+  ]
+]
+```
+```javascript
+const data = {
+  "method": "user.create.account",
+  "params": {
+    "name": "Emil",
+    "email": "emil@bitclude.com",
+    "password": "R5#%ePg@$",
+    "phone": "+48123456789",
+    "nip": "123-456-78-90"
+  }
+}
+```
+> Expected server response
+```json
+{
+    "success": false,
+    "timestamp": 1643163957,
+    "code": 1027,
+    "message": "Email address already exists in the database"
+}
+```

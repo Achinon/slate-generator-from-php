@@ -1,0 +1,31 @@
+```shell
+curl --location --request POST 'https://test.bcpay.pl/api/' --header 'Content-Type: application/json' --data-raw '{
+  "method": "user.create.token",
+  "auth": {
+    "uid": "10000",
+    "token": "SIQA0ECN3YK4HZ9Q2H1TMBJMAUYPRGOS"
+  }
+}'
+```
+```php
+$data = [
+  'method' => 'user.create.token',
+  'auth' => [
+    'uid' => '10000',
+    'token' => 'SIQA0ECN3YK4HZ9Q2H1TMBJMAUYPRGOS'
+  ]
+]
+```
+```javascript
+undefined
+```
+> Expected server response
+```json
+{
+    "success": true,
+    "timestamp": 1643212396,
+    "response": {
+        "token": "PZUFZ46H8L6FG3NOHBD3ET7L4Q7YX75V"
+    }
+}
+```

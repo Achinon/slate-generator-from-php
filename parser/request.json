@@ -1,0 +1,7 @@
+{
+  "method": "user.create.token",
+  "auth": {
+    "uid": "10000",
+    "token": "SIQA0ECN3YK4HZ9Q2H1TMBJMAUYPRGOS"
+  }
+}
